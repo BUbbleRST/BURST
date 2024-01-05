@@ -17,7 +17,7 @@ BURST methodology applied to video footage capturing a natural methane emission 
 ![cap_B3_IS341_LR_video_00_00_15_01](https://github.com/BUbbleRST/BURST.github/assets/16003542/1419499a-a2ed-4c7c-876d-aba8c6a689e4)
 BURST methodology applied to video footage capturing multiple natural methane emissions on the seafloor at water depths exceeding 300 meters. Successful bubble detection is achieved despite suboptimal imaging conditions and varying footage quality. Note the masked regions in both images, used to exclude bubble plumes falling outside the field of view of the other camera, enhancing the accuracy of the analysis.
 
-# TEST IT YOURSELF
+# HOW TO TEST BURST
 Test videos with corresponding camera parameters, YOLO weights, etc. are provided with the script. To test BURST, follow these steps:
 1. Download all the files and subdirectories
 2. Unpack the YOLO weight from the tar archive located inside the "dnn_model_bubbles" subdirectory. The YOLO weight file is required for the bubble detection (it is tar-archived only because the file size is otherwise too large for GitHub)
