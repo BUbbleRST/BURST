@@ -2,6 +2,7 @@
 
 ![output_20230308_Test4_WideFOV_Macro_v3_npx2_unsharp_cap__LR_video_00_00_06_01](https://github.com/BUbbleRST/BURST.github/assets/16003542/87b686a4-1b76-4520-806c-662f241b3298)
 
+
 # DESCRIPTION
 BURST is a methodology to measure the sizes and rise velocities of underwater bubbles (gas or oil) from dual-camera footage and to estimate the relates volumetric flow rates. The BURST python script batches all steps of the methodology, including the automated detection and matching of bubbles from the camera footage, and outputs the bubble size distribution (BSD), the bubble rise speed (BRS) and bubble flow rate.
 Bubble detection uses the yolo neural network (currently Yolo-v4, but the code can be updated to use a newer version). Yolo weights must be computed separately by training the neural network as described here (https://github.com/AlexeyAB/darknet).
