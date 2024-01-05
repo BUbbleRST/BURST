@@ -8,12 +8,6 @@ Bubble detection uses the yolo neural network (currently Yolo-v4, but the code c
 The bubble plume to quantify must be imaged with a dual-camera platform, with the two cameras ideally positioned at a ralative angle close to 90°. Both video files must be synchronised beforehand (the video files may have different frame rates but the first frame of each video file must be perfectly synchronized). 
 The main script's inputs are the two video files (synchronized), the distortion parameters or each camera, a selection of synchronized camera frames from the two video files showing a common reference target with known dimensions (e.g. checkerboard pattern) for the camera position estimation, and the YOLO weight files created during the neural network training. All script's inputs are defined in a configuration file.
 
-![cap__LR_video_InSitu1_20231122_00_03_38_02](https://github.com/BUbbleRST/BURST.github/assets/16003542/12ce9609-465f-4aa5-98a3-0ddbe2640889)
-
 ![cap__LR_video_InSitu1_unsharp_00_03_13_03](https://github.com/BUbbleRST/BURST.github/assets/16003542/9b76fe0d-2c11-44e9-b113-8acfe74f4e32)
 
-![cap__LR_video_InSitu2_00_00_13_01](https://github.com/BUbbleRST/BURST.github/assets/16003542/74a466bb-7b14-44b2-9149-455ee975b90d)
-
 ![cap__LR_video_InSitu2_20231117_00_00_11_01](https://github.com/BUbbleRST/BURST.github/assets/16003542/550e3066-723f-4c44-bbca-9ac094709a82)
-
-![cap__LR_video_InSitu1_unsharp_00_03_13_03](https://github.com/BUbbleRST/BURST.github/assets/16003542/766241ad-6d04-4ed8-b546-1a5a26e5ec4d)
