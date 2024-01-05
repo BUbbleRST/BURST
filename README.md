@@ -11,9 +11,9 @@ The main script's inputs are the two video files (synchronized), the distortion 
 
 
 ![cap_B2_IS327_LR_video_00_00_11_02](https://github.com/BUbbleRST/BURST.github/assets/16003542/468b2f3b-5f50-436a-8ede-943ea672c222)
-BURST applied to footage of natural methane emissions on the seepbed at water depths in excess of 300 m. The white band along the top of the left-hand video indicates that this part of the frame is masked out during the bubble detection. Such masks are used to exclude regions of an image that fall outside of the field of view of the other camera. This helps making the left/right bubble matching more robust.
+BURST methodology applied to video footage capturing a natural methane emission on the seafloor at water depths exceeding 300 meters. In the left-hand video, the white band at the top indicates a masked-out region during bubble detection, eliminating areas outside the field of view of the other camera for enhanced robustness in left/right bubble matching.
 
 
 ![cap_B3_IS341_LR_video_00_00_15_01](https://github.com/BUbbleRST/BURST.github/assets/16003542/1419499a-a2ed-4c7c-876d-aba8c6a689e4)
-BURST applied to footage of natural methane emissions on the seepbed at water depths in excess of 300 m. Bubbles are successfully detected despite the suboptimal imaging conditions and footage quality. Note the masked regions in both images: they are used to are used to exclude mask bubble plumes that fall outside of the field of view of the other camera.
+BURST methodology applied to video footage capturing multiple natural methane emissions on the seafloor at water depths exceeding 300 meters. Successful bubble detection is achieved despite suboptimal imaging conditions and varying footage quality. Note the masked regions in both images, used to exclude bubble plumes falling outside the field of view of the other camera, enhancing the accuracy of the analysis.
 
