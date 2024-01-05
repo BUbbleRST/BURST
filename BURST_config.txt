@@ -1,0 +1,75 @@
+[Parameters]
+VideoPath: ./input_videos
+
+VideoFileLEFT: testvideoLEFT.mp4
+VideoFileRIGHT: testvideoRIGHT.mp4
+CameraParametersFileLEFT: cameraLEFT.txt
+CameraParametersFileRIGHT: cameraRIGHT.txt
+
+ChessboardImagesPathLEFT: ./input_videos/chessboard_images/testvideoLEFT
+ChessboardImagesPathRIGHT: ./input_videos/chessboard_images/testvideoRIGHT
+
+ManualShutterSpeed_sec: 1/120
+MainCameraForVerticalBubbleSize:
+
+MaskAreasLEFT
+#MaskAreasLEFT: 0, 720, 1920, 1080
+MaskAreasRIGHT
+#MaskAreasRIGHT: 0, 720, 1920, 1080
+
+showFrames: 0
+exportVideoFromTracking: 1
+
+
+[Deblurring]
+UnsharpMask: 0
+radius: 3
+amount: 2
+# setting UnsharpMask to 0 will produce more accurate results but will slow down the analysis.
+
+
+[Detection and Tracking]
+YoloPath: ./dnn_model_bubbles
+WeightFileLEFT: 20230413_yolo-obj_1class_final.weights
+WeightFileRIGHT: 20230413_yolo-obj_1class_final.weights
+ConfigurationFileLEFT: yolo-obj_for_detection.cfg
+ConfigurationFileRIGHT: yolo-obj_for_detection.cfg
+YoloClassesToExclude: 
+
+SORT_max_age: 10
+SORT_min_hits: 3
+SORT_iou_threshold: 0.0001
+SORT_rectangle_coefficient_LEFT: 1
+SORT_rectangle_coefficient_RIGHT: 1
+
+ConfidenceThreshold: 0.5
+NMS_Threshold: 0.4
+use_topk: 0
+HistoryDuration_sec: 5
+
+
+[Matching]
+# [min, max] thresholds on distance between camera rays for bubble matching [mm]
+DistanceThresholds: 0.005, 10
+
+
+# Fast matching will be used whenever the number of bubbles to match in one frame exceeds this threshold
+BubbleThresholdForFastMatching: 20
+
+
+[Display and Export]
+DisplayPixelWidth: 960
+DisplayPixelHeight: 960
+ExportPixelWidth: 1920
+ScreenDPI: 96
+BubbleNumberSizeLEFT: 1.5
+BubbleNumberSizeRIGHT: 1.5
+VerboseMode: 1
+
+
+[Checkerboard]
+checkerboardPoints: 24, 17
+checkerboardCellsize_mm = 7.5
+
+
+# OpenCV coordinate system is right-handed (with thumb as x-axis)
