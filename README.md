@@ -21,7 +21,7 @@ BURST methodology applied to video footage capturing multiple natural methane em
 Test videos with corresponding camera parameters, YOLO weights, etc. are provided with the script. To test BURST, follow these steps:
 1. Download all the files and subdirectories
 2. Unpack the YOLO weight from the tar archive located inside the "dnn_model_bubbles" subdirectory. The YOLO weight file is required for the bubble detection (it is tar-archived only because the file size is otherwise too large for GitHub)
-3. Install all python modules required to run BURST. A non-exhaustive list of the required python modules includes: configparser, numpy, scipy, opencv-python, matplotlib, scikit-image, filterpy, lap.
+3. Install all python modules required to run BURST. A non-exhaustive list of the required python modules includes: configparser, numpy, scipy, opencv-python, matplotlib, scikit-image, filterpy, lap. The BURST script was tested with Python 3.10.
 4. Adjust the file paths in the BURST configuration file (BURST_config.txt) according to your operating system (the provided configuration file uses linux path formats).
 5. Run the BURST.py script.
    
