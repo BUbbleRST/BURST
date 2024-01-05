@@ -9,5 +9,7 @@ The bubble plume to quantify must be imaged with a dual-camera platform, with th
 The main script's inputs are the two video files (synchronized), the distortion parameters or each camera, a selection of synchronized camera frames from the two video files showing a common reference target with known dimensions (e.g. checkerboard pattern) for the camera position estimation, and the YOLO weight files created during the neural network training. All script's inputs are defined in a configuration file.
 
 ![cap__LR_video_InSitu2_20231117_00_00_11_01](https://github.com/BUbbleRST/BURST.github/assets/16003542/550e3066-723f-4c44-bbca-9ac094709a82)
+BURST applied to footage of natural methane emissions on the seepbed at water depths in excess of 300 m.
 
 ![cap__LR_video_InSitu1_unsharp_00_03_13_03](https://github.com/BUbbleRST/BURST.github/assets/16003542/9b76fe0d-2c11-44e9-b113-8acfe74f4e32)
+BURST applied to footage of natural methane emissions on the seepbed at water depths in excess of 300 m. Bubbles are successfully detected despite the suboptimal imaging conditions and footage quality.
